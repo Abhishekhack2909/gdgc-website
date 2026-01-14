@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import WebDTeam from "./pages/WebDTeam";
 
 function App() {
-
   return (
     <>
       <NavBar />
