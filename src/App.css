@@ -1,0 +1,54 @@
+/* ===== Global Responsive Scaling ===== */
+
+.app-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: clamp(14px, 1vw + 12px, 18px);
+}
+
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 1024px) {
+  .app-container {
+    padding: 0 clamp(0.75rem, 4vw, 2rem);
+  }
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: clamp(13px, 1vw + 11px, 16px);
+  }
+  
+  .app-container {
+    padding: 0 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .app-container {
+    padding: 0 0.75rem;
+  }
+}
