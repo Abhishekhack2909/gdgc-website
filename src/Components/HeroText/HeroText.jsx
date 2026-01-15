@@ -27,21 +27,22 @@ export default function HeroText() {
                 <img src={learn} alt="" className="learn" />
                 <img src={build} alt="" className="build" />
 
-                <div
-                    className="hero-building"
-                    role="img"
-                    aria-label="VIT Bhopal Building"
-                    style={{ backgroundImage: `url(${building})` }}
-                ></div>
+                <div className="hero-building" role="img" aria-label="VIT Bhopal Building">
+                    <img
+                        src={building}
+                        alt="VIT Bhopal Building"
+                        className="block mx-auto max-w-[110%] max-h-full w-auto h-auto translate-y-9"
+                    />
+                </div>
             </section>
 
             <section className="hero" aria-label="Site hero">
                 <div className="hero__inner">
-                    {/* <h1 className="hero__heading">
+                    <h1 className="hero__heading">
                         <span className="hero__we">we are</span>{" "}
                         <span className="hero__gdgc">gdgc</span>
                         <span className="hero__dot" aria-hidden="true"></span>
-                    </h1> */}
+                    </h1>
                 </div>
 
                 {/* Bottom-left location (clickable, opens Google Maps) */}

@@ -178,8 +178,12 @@
         @apply fixed bottom-[clamp(20px,3vw,32px)];
     }
     .hero-building {
-        @apply fixed top-[50px] left-0 right-0 bottom-0 h-[500px] bg-transparent bg-no-repeat bg-bottom bg-[length:120%_100%] z-0 pointer-events-none;
+        @apply flex justify-center items-center w-full absolute left-0 right-0 top-1/2 z-0 pointer-events-none;
+        transform: translateY(-50%);
+        height: 650px;
+
     }
+
     .cloud {
         @apply absolute w-[180px] h-auto opacity-90 z-10;
     }
@@ -196,16 +200,16 @@
         @apply top-[25%] left-[4%];
     }
     .kite-right {
-        @apply top-[10%] right-[15%] translate-y-[70px];
+        @apply top-[7%] right-[15%] translate-y-[70px];
     }
     .planet {
-        @apply absolute w-[150px] h-auto top-[7%] right-[25%] opacity-90 z-10;
+        @apply absolute w-[150px] h-auto top-[7%] left-[17%] opacity-90 z-10;
     }
-    .learn {
+    .learn {    
         @apply absolute w-[120px] h-auto bottom-[15%] left-[5%] opacity-95 z-10 -translate-y-[250px];
     }
     .build {
-        @apply absolute w-[130px] h-auto bottom-[18%] right-[5%] opacity-95 z-10 -translate-y-[250px];
+        @apply absolute w-[130px] h-auto bottom-[15%] right-[3%] opacity-95 z-10 -translate-y-[250px];
     }
     .advitya1 {
         @apply absolute w-[100px] h-auto bottom-[5%] right-0 opacity-95 z-10 -translate-y-[470px];
