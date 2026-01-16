@@ -79,14 +79,14 @@ export default function HeroText() {
                     </span>
                 </a>
 
-                <div className="hero__cta">
+                {/* <div className="hero__cta">
                     <Button className="hero__cta-button w-45 h-11 px-8">
                         <ExternalLink color="white" />
                         <Link to="/join" className="inline text-xl ml-2">
                             Join Us 🚀
                         </Link>
                     </Button>
-                </div>
+                </div> */}
 
                 {/* Bottom-right brand (logo + stacked text) */}
                 <div className="hero__brand" aria-hidden="true">

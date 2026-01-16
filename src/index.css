@@ -134,7 +134,7 @@
     }
     .hero__heading {
         font-family: 'Syne', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-        @apply font-extrabold text-[clamp(2.6rem,7.5vw,7rem)] leading-[0.9] m-0 inline-flex items-baseline gap-2 justify-center animate-[heroFadeIn_700ms_ease-out_100ms_both] drop-shadow-[0_10px_20px_rgba(0,0,0,0.18)];
+        @apply font-extrabold text-[clamp(2.6rem,7.5vw,7rem)] leading-[0.9] m-0 mt-11 inline-flex items-baseline gap-2 justify-center animate-[heroFadeIn_700ms_ease-out_100ms_both] drop-shadow-[0_10px_20px_rgba(0,0,0,0.18)];
     }
     .hero__dot {
         @apply inline-block w-[clamp(10px,1.2vw,18px)] h-[clamp(10px,1.2vw,18px)] ml-1 rounded-full bg-[#ff2d55] align-middle shadow-[0_8px_20px_rgba(0,0,0,0.18)] -translate-y-[6%] scale-[0.96] animate-[dotPop_420ms_cubic-bezier(.2,.9,.3,1)_240ms_both];
@@ -158,7 +158,7 @@
         @apply block text-gray-400 mt-0.5;
     }
     .hero__brand {
-        @apply fixed right-[clamp(12px,2.2vw,28px)] bottom-[clamp(12px,2.2vw,28px)] z-30 inline-flex items-center gap-3 pointer-events-none select-none animate-[heroFadeIn_700ms_ease-out_420ms_both];
+        @apply fixed right-[clamp(12px,2.2vw,10px)] bottom-[clamp(12px,2.2vw,28px)] z-30 inline-flex items-center gap-3 pointer-events-none select-none animate-[heroFadeIn_700ms_ease-out_420ms_both];
     }
     .hero__brand-logo {
         @apply w-[clamp(36px,4.8vw,60px)] h-auto block drop-shadow-[0_6px_12px_rgba(0,0,0,0.12)] [transform:translateY(10px)];
@@ -185,7 +185,7 @@
         @apply absolute w-[180px] h-auto opacity-90 z-10;
     }
     .cloud-left {
-        @apply top-[12%] left-[5%];
+        @apply top-[12%] left-[2%];
     }
     .cloud-right {
         @apply top-[18%] right-[1%];
@@ -203,10 +203,10 @@
         @apply absolute w-[150px] h-auto top-[7%] left-[17%] opacity-90 z-10;
     }
     .learn {    
-        @apply absolute w-[120px] h-auto bottom-[15%] left-[5%] opacity-95 z-10 -translate-y-[250px];
+        @apply absolute w-[120px] h-auto bottom-[10%] left-[5%] opacity-95 z-10 -translate-y-[250px];
     }
     .build {
-        @apply absolute w-[130px] h-auto bottom-[15%] right-[3%] opacity-95 z-10 -translate-y-[250px];
+        @apply absolute w-[130px] h-auto bottom-[10%] right-[3%] opacity-95 z-10 -translate-y-[250px];
     }
     .advitya1 {
         @apply absolute w-[100px] h-auto bottom-[5%] right-0 opacity-95 z-10 -translate-y-[470px];
