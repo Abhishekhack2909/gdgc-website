@@ -9,11 +9,8 @@ import airindia from "@/assets/Kite_Element_2.svg";
 import saturn from "@/assets/Planets_Image.svg";
 import learn from "@/assets/learn.svg";
 import build from "@/assets/build.png";
+import { MapPin } from "lucide-react";
 
-import { Link } from "react-router-dom";
-import "@/shadcn/styles/neobrutalism.css";
-import { Button } from "@/shadcn/ui/button.jsx";
-import { ExternalLink, MapPin } from "lucide-react";
 
 export default function HeroText() {
     return (
@@ -78,15 +75,6 @@ export default function HeroText() {
                         </span>
                     </span>
                 </a>
-
-                {/* <div className="hero__cta">
-                    <Button className="hero__cta-button w-45 h-11 px-8">
-                        <ExternalLink color="white" />
-                        <Link to="/join" className="inline text-xl ml-2">
-                            Join Us 🚀
-                        </Link>
-                    </Button>
-                </div> */}
 
                 {/* Bottom-right brand (logo + stacked text) */}
                 <div className="hero__brand" aria-hidden="true">

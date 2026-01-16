@@ -3,7 +3,7 @@
 This is the official website for **Google Developer Groups on Campus (GDGC) × VIT Bhopal University** for the **2025–26 cycle**.
 
 🔗 **Community Page:**  
-[GDGC × VIT Bhopal University](https://gdsc.community.dev/vellore-institute-of-technology-bhopal-india/)
+[GDGC × VIT Bhopal University](https://gdg.community.dev/gdg-on-campus-vellore-institute-of-technology-bhopal-india/)
 
 ---
 
