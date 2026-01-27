@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -9,13 +7,18 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/shadcn/ui/navigation-menu";
+
 import { cn } from "@/shadcn/lib/utils";
+import { Link } from "react-router-dom";
+import "@/shadcn/styles/neobrutalism.css";
+import { Button } from "@/shadcn/ui/button.jsx";
+import { ExternalLink } from "lucide-react";
 
 const techDomainLinks = [
     {
         title: "Web Development Team",
         href: "/teams/tech/webDTeam",
-        description: "Lorem ipsum dolor sit amet.",
+        description: "Building amazing web experiences",
     },
     {
         title: "Android Dev Team",
@@ -35,7 +38,7 @@ const techDomainLinks = [
     {
         title: "Women Techmakers",
         href: "/teams/tech/womenTechmakers",
-        description: "Lorem ipsum dolor sit amet.",
+        description: "",
     },
 ];
 
@@ -54,6 +57,11 @@ const nonTechDomainLinks = [
         title: "Design & Content Team",
         href: "/teams/nonTech/designContentTeam",
         description: "Creating stunning visuals and content",
+    },
+    {
+        title: "Videography and Photography Team",
+        href: "/teams/nonTech/videoPhotographyTeam",
+        description: "Capturing moments...",
     },
 ];
 
@@ -83,7 +91,7 @@ function ListItem({ className, title, children, href, ...props }) {
 
 function DesktopNavBar() {
     return (
-        <nav className="hidden lg:flex items-center justify-between w-full px-8 py-4">
+        <nav className="hidden lg:flex items-center justify-between w-full h-12 px-8 py-4 bg-white">
             {/* Logo */}
             <Link to="/" className="flex items-center">
                 <img
@@ -166,13 +174,12 @@ function DesktopNavBar() {
             </NavigationMenu>
 
             {/* CTA Button */}
-            <a
-                href="https://gdg.community.dev/gdg-on-campus-vellore-institute-of-technology-bhopal-india/"
-                target="_blank"
-                className="bg-linear-to-r from-sky-500 to-blue-600 text-white hover:from-sky-600 hover:to-blue-700 px-6 py-2.5 rounded-full text-sm font-medium transition shadow-lg"
-            >
-                GDGC × VIT Bhopal University
-            </a>
+            <Button className="mb-1 rounded-full bg-linear-to-r from-sky-500 to-blue-600 text-white hover:from-sky-600 hover:to-blue-700">
+                <ExternalLink color="white" />
+                <Link to="/join" className="inline text-sm">
+                    Join Us 🚀
+                </Link>
+            </Button>
         </nav>
     );
 }

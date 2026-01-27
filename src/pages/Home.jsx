@@ -1,18 +1,17 @@
 import React from 'react'
 import HeroText from '../Components/HeroText/HeroText.jsx'
 import JoinUsButton from '../Components/HeroText/JoinUsButton.jsx'
+import EventsSectionContainer from '../Components/EventsSection/EventsSectionContainer.jsx'
 import AboutUs from '@/Components/AboutUs/AboutUs.jsx'
 
-
-
 function Home() {
-  return (
-    <>
-      <HeroText />
-      <JoinUsButton />
-      {/* The building illustration and other elements are rendered elsewhere; the HeroText sits above them visually. */}
-    </>
-  )
+    return (
+        <>
+            <HeroSection />
+            <EventsSectionContainer />
+            <AboutUs />
+        </>
+    );
 }
 
-export default Home
+export default Home;
