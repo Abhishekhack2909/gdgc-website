@@ -16,12 +16,10 @@ function App() {
 
     return (
         <>
-            <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 md:px-8 lg:px-12 box-border overflow-x-hidden">
-                <NavBar />
-                <main>
-                    <Outlet />
-                </main>
-            </div>
+            <NavBar />
+            <main>
+                <Outlet />
+            </main>
             <div ref={footerRef} id="footer">
                 <Footer />
             </div>
