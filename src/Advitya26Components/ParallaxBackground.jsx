@@ -1,4 +1,5 @@
 import { motion, useScroll, useSpring, useTransform } from 'motion/react'
+import OlympicRings from './OlympicRings'
 
 const ParallaxBackground = () => {
     const { scrollYProgress } = useScroll();
@@ -27,6 +28,17 @@ const ParallaxBackground = () => {
                     transformOrigin: 'center top',
                 }}
             >
+                {/* Olympic Rings */}
+                <OlympicRings
+                    responsive={true}
+                    className="absolute inset-0 z-[100]"
+                    ringSize={50}
+                    strokeWidth={8}
+                    assembleY={0.5}
+                    finalY={0.15}
+                    startFromBelow={true}
+                />
+
                 {/* Golden Bridge */}
                 <motion.div
                     style={{ x: bridge }}
@@ -115,7 +127,7 @@ const ParallaxBackground = () => {
                     <motion.img
                         src="/olympicsImages/Colosseum.png"
                         alt="Colosseum"
-                        className='absolute -bottom-45 right-87.5 h-[70vh] z-90'
+                        className='absolute -bottom-30 right-87.5 h-[70vh] z-90'
                     // dont remove these part these for reference
                     // initial={{ y: "100%" }}
                     // animate={{ y: 0 }}
