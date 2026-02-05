@@ -94,3 +94,11 @@
 .logo:hover {
     transform: scale(1.05);
 }
+
+@media (hover: none), (pointer: coarse) {
+  .logo,
+  .logo-rotating {
+    animation: none !important;
+    transition: none !important;
+  }
+}

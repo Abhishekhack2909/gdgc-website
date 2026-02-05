@@ -14,12 +14,26 @@ const navLinks = [
 
 export function GlobalNavbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isRotatingLogo, setIsRotatingLogo] = useState(false);
+  // Detect hover-capable, fine-pointer devices (desktop) so we can keep hover behavior there.
+  const [supportsHover, setSupportsHover] = useState(true);
 
   useEffect(() => {
     const img = new Image();
     img.src = '/Olympics-Logo.png';
     if (img.decode) img.decode().catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const mq = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const update = () => setSupportsHover(mq.matches);
+    update();
+    if (mq.addEventListener) mq.addEventListener('change', update);
+    else mq.addListener(update);
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener('change', update);
+      else mq.removeListener(update);
+    };
   }, []);
 
   return (
@@ -31,14 +45,25 @@ export function GlobalNavbar() {
     >
       <div
         className="flex flex-row-reverse items-center gap-4"
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
+        onMouseEnter={() => supportsHover && setIsOpen(true)}
+        onMouseLeave={() => supportsHover && setIsOpen(false)}
       >
-        {/* Logo */}
+        {/* Logo used as mobile menu toggle*/}
         <motion.div
-          className="w-17 h-17 cursor-pointer flex items-center justify-center"
-          whileHover={{ scale: 1.5, rotate: 360 }}
-          transition={{ duration: 0.3, ease: 'linear',}}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              if (!supportsHover) setIsOpen((v) => !v);
+            }
+          }}
+          onClick={() => !supportsHover && setIsOpen((v) => !v)}
+          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isOpen}
+          className="w-17 h-17 cursor-pointer flex items-center justify-center logo"
+          whileHover={supportsHover ? { scale: 1.5, rotate: 360 } : undefined}
+          whileTap={{ scale: 1.05 }}
+          transition={{ duration: 0.3, ease: 'linear' }}
           style={{
             filter: 'drop-shadow(0 0 10px rgba(232, 239, 211, 0.6)) drop-shadow(0 0 20px rgba(34, 197, 94, 0.4))',
             transformOrigin: 'center',
@@ -77,6 +102,7 @@ export function GlobalNavbar() {
                     <motion.li key={link.href} whileHover={{ y: -2 }}>
                       <Link
                         to={link.href}
+                        onClick={() => setIsOpen(false)}
                         className="relative flex items-center gap-2 px-3 py-2 rounded-full hover:bg-black/10 transition-colors text-black text-sm group"
                       >
                         <Icon size={16} />
