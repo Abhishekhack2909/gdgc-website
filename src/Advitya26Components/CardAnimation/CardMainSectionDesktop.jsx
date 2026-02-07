@@ -14,19 +14,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Size presets
 const SIZE_CLASSES = {
-    sm: "h-[60vh]",
-    md: "h-[70vh]",
-    lg: "h-[80vh]",
-    xl: "h-[85vh]",
-    "2xl": "h-[90vh]",
+    sm: "h-[70vh]",
+    md: "h-[80vh]",
+    lg: "h-[85vh]",
+    xl: "h-[90vh]",
+    "2xl": "h-[95vh]",
 };
 
 const SIZE_VALUES = {
-    sm: 60,
-    md: 70,
-    lg: 80,
-    xl: 85,
-    "2xl": 90,
+    sm: 70,
+    md: 80,
+    lg: 85,
+    xl: 90,
+    "2xl": 95,
 };
 
 const DEFAULT_GAP_VW = 5;
@@ -35,8 +35,8 @@ const DEFAULT_GAP_VW = 5;
 const getCardWidthVw = (cardSize) => SIZE_VALUES[cardSize] || SIZE_VALUES.lg;
 const getInitialOffset = (cardWidthVw) => (100 - cardWidthVw) / 2;
 
-// CardMainSection component using GSAP ScrollTrigger (Mobile)
-export default function CardMainSection({
+// CardMainSectionDesktop component using GSAP ScrollTrigger
+export default function CardMainSectionDesktop({
     children,
     bgColor = "transparent",
     cardSize = "lg",
@@ -53,9 +53,17 @@ export default function CardMainSection({
     const childArray = Children.toArray(children);
 
     const cardWidthVw = getCardWidthVw(cardSize);
-    const cardHeightVh = SIZE_VALUES[cardSize] || 80;
+    const cardHeightVh = SIZE_VALUES[cardSize] || 90;
     const gapVw = DEFAULT_GAP_VW;
     const initialOffset = getInitialOffset(cardWidthVw);
+
+    // Calculate scroll distance for horizontal movement (in vw)
+    const getScrollDistanceVw = () => {
+        const totalCardsWidth = childArray.length * cardWidthVw;
+        const totalGapsWidth = (childArray.length - 1) * gapVw;
+        const totalPadding = initialOffset * 2;
+        return totalCardsWidth + totalGapsWidth + totalPadding - 100; // subtract viewport width (100vw)
+    };
 
     // Calculate full screen scale
     const getFullScreenScale = () => {
@@ -77,19 +85,16 @@ export default function CardMainSection({
 
         if (!container || !track || !section) return;
 
+        // Calculate total scroll distance for horizontal movement
+        const getScrollWidth = () => {
+            return Math.max(0, track.scrollWidth - window.innerWidth);
+        };
+
         // Create context for cleanup
         const ctx = gsap.context(() => {
             // Get the last card's position to calculate scroll to center it
             const lastCardEl = cardRefs.current[childArray.length - 1];
             if (!lastCardEl) return;
-
-            // Ensure all cards are at full scale for accurate measurement
-            cardRefs.current.forEach((card) => {
-                if (card) gsap.set(card, { scale: 1 });
-            });
-
-            // Force layout recalculation
-            track.offsetHeight;
 
             // Calculate how far to scroll horizontally to CENTER the last card
             const lastCardRect = lastCardEl.getBoundingClientRect();
@@ -111,7 +116,7 @@ export default function CardMainSection({
 
             if (totalDistance <= 0) return;
 
-            // NOW set initial states (after measurement)
+            // Set initial states
             gsap.set(track, { x: 0 });
             cardRefs.current.forEach((card, index) => {
                 if (!card) return;
@@ -176,7 +181,7 @@ export default function CardMainSection({
                 start: "top top",
                 end: () => `+=${totalDistance}`,
                 pin: section,
-                pinSpacing: true,
+                pinSpacing: false,
                 scrub: 0.8,
                 animation: mainTL,
                 invalidateOnRefresh: true,
@@ -240,6 +245,8 @@ export default function CardMainSection({
         lastCardInitialScale,
     ]);
 
+    // Container height is now dynamically calculated in useEffect based on actual track width
+
     return (
         <div
             ref={containerRef}
@@ -274,7 +281,7 @@ export default function CardMainSection({
                                 ref={(el) => (cardRefs.current[index] = el)}
                                 className={`${SIZE_CLASSES[cardSize]} shrink-0 will-change-transform`}
                                 style={{
-                                    width: isSecondToLast ? "auto" : `${cardWidthVw}vw`,
+                                    width: `${cardWidthVw}vw`,
                                     transformOrigin: "center center",
                                     marginRight: isSecondToLast ? "20vw" : undefined, // Extra spacing after LoadingTextScroller
                                 }}

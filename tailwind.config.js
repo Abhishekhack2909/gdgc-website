@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fredericka: ['"Fredericka the Great"', 'cursive'],
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 export default function OlympicRings({
@@ -12,10 +12,18 @@ export default function OlympicRings({
     assembleY = 0.55,
     finalY = 0.25,
     startFromBelow = false,
+    onFadeStart = () => { },
 }) {
     const canvasRef = useRef(null);
     const containerRef = useRef(null);
     const tlRef = useRef(null);
+    const onFadeStartRef = useRef(onFadeStart);
+    const [containerOpacity, setContainerOpacity] = useState(1);
+
+    // Keep the callback ref updated
+    useEffect(() => {
+        onFadeStartRef.current = onFadeStart;
+    }, [onFadeStart]);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -111,7 +119,7 @@ export default function OlympicRings({
 
             // 1️⃣ Fly in from edges and assemble
             tl.to(rings, {
-                duration: 1.6,
+                duration: 0.6,
                 ease: "power3.out",
                 x: (i) =>
                     [
@@ -122,7 +130,7 @@ export default function OlympicRings({
                         centerX + spacing / 2,
                     ][i],
                 y: (i) => (i < 3 ? assembleYPos : assembleYPos + rowOffset),
-                stagger: 0.15,
+                stagger: 0.16,
             });
 
             // 2️⃣ Fusion glow moment
@@ -139,7 +147,7 @@ export default function OlympicRings({
 
             // 3️⃣ Lift combined logo to top like a heading
             tl.to(rings, {
-                duration: 1.1,
+                duration: 0.6,
                 ease: "power3.inOut",
                 y: (i) =>
                     i < 3
@@ -147,6 +155,20 @@ export default function OlympicRings({
                         : finalYPos + rowOffset - ringSize * 0.2,
                 stagger: 0.04,
             });
+
+            // 4️⃣ Now Atlast Fade out the rings
+            // starts slightly before lift ends (-=0.3)
+            tl.to({ opacity: 1 }, {
+                opacity: 0,
+                duration: 1.5,
+                ease: "power2.inOut",
+                onStart: () => {
+                    onFadeStartRef.current();
+                },
+                onUpdate: function () {
+                    setContainerOpacity(this.targets()[0].opacity);
+                },
+            }, "-=0.3");
 
             draw();
         };
@@ -175,18 +197,22 @@ export default function OlympicRings({
         width: responsive
             ? "100%"
             : typeof width === "number"
-              ? `${width}px`
-              : width,
+                ? `${width}px`
+                : width,
         height: responsive
             ? "100%"
             : typeof height === "number"
-              ? `${height}px`
-              : height,
+                ? `${height}px`
+                : height,
         ...style,
     };
 
     return (
-        <div ref={containerRef} className={className} style={resolvedStyle}>
+        <div
+            ref={containerRef}
+            className={className}
+            style={{ ...resolvedStyle, opacity: containerOpacity }}
+        >
             <canvas
                 ref={canvasRef}
                 className="block"

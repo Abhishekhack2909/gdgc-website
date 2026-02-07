@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'motion/react'
 import OlympicRings from './OlympicRings'
+import GoogleOlympicsHeading from './GoogleOlympicsHeading'
 
-const ParallaxBackground = () => {
+const ParallaxBackground = ({ onRingsFadeStart = () => { } }) => {
+    const [showHeading, setShowHeading] = useState(false);
     const { scrollYProgress } = useScroll();
     const x = useSpring(scrollYProgress, { stiffness: 100, damping: 50, mass: 1 });
     const bridge = useTransform(x, [0, 0.5], [0, 500]);
@@ -39,7 +42,17 @@ const ParallaxBackground = () => {
                     assembleY={0.5}
                     finalY={0.15}
                     startFromBelow={true}
+                    onFadeStart={() => {
+                        onRingsFadeStart();
+                        // Delay showing heading until rings are mostly faded (0.5s after fade starts)
+                        setTimeout(() => setShowHeading(true), 500);
+                    }}
                 />
+
+                {/* Google Olympics Heading - appears after rings fade */}
+                <div className="absolute inset-0 z-[101] flex items-start justify-center pt-[8vh]">
+                    <GoogleOlympicsHeading show={showHeading} />
+                </div>
 
                 {/* Golden Bridge */}
                 <motion.div
@@ -123,7 +136,7 @@ const ParallaxBackground = () => {
                     style={{ y : colosseum }}
                     initial={{ y: 300 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 2,delay: 1, ease: "easeInOut" }}
+                    transition={{ duration: 0.5,delay: 2.5, ease: "easeIn" }}
                     className='absolute w-full h-[90vh] z-80 bottom-0'
                 >
                     <motion.img

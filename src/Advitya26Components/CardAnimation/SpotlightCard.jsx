@@ -1,7 +1,13 @@
 // SpotlightCard Component
 // props.children - Content to render inside the card
 
-export default function SpotlightCard({ children, className = '', bgColor = 'white', showGrid = true }) {
+export default function SpotlightCard({
+    children,
+    className = "",
+    bgColor = "white",
+    showGrid = true,
+    contentOpacity = 1,
+}) {
     return (
         <div className={`relative p-1 ${className}`}>
             {/* Card body */}
@@ -20,8 +26,14 @@ export default function SpotlightCard({ children, className = '', bgColor = 'whi
                     />
                 )}
 
-                {/* Content */}
-                <div className="relative z-2">
+                {/* Content with optional opacity control */}
+                <div
+                    className="relative z-2"
+                    style={{
+                        opacity: contentOpacity,
+                        transition: "opacity 0.15s ease-out",
+                    }}
+                >
                     {children}
                 </div>
             </div>
