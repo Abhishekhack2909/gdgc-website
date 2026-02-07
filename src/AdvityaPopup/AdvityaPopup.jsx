@@ -5,7 +5,7 @@ export default function AdvityaPopup({
   onClose,
   eventDate = "2026-02-27T00:00:00",
   eventName = "ADVITYA",
-  registerLink = "https://your-registration-link.com"
+  registerLink = "https://forms.gle/geUHuLxd2PenFN4s8"
 }) {
   const targetDate = new Date(eventDate);
 
@@ -49,7 +49,7 @@ export default function AdvityaPopup({
             <button className="close-btn" onClick={onClose}>✕</button>
 
             <div className="stamp-core">
-              <img src="/AdvityaPopup.png" alt="poster" />
+              <img src="/AdvityaPopup.avif" alt="poster" />
             </div>
           </div>
 

@@ -90,7 +90,7 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                     className='absolute w-full h-auto z-0 bottom-0'
                 >
                     <motion.img
-                        src="/greatwall-mobile.png"
+                        src="/greatwall-mobile.avif"
                         alt="great wall"
                         className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[80vh] sm:h-[50vh] z-0 object-cover"
                     />
@@ -106,7 +106,7 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                     className='absolute w-full h-auto z-80 bottom-0 border-amber-950'
                 >
                     <motion.img
-                        src="/olympicsImages/Colosseum.png"
+                        src="/olympicsImages/Colosseum.avif"
                         alt="Colosseum"
                         className='absolute -bottom-60 w-[100vw] h-[100vh] z-80 object-contain'
                     />

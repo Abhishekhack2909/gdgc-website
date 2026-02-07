@@ -45,7 +45,7 @@ export function GlobalNavbar({ showLogo = true }) {
 
   useEffect(() => {
     const img = new Image();
-    img.src = '/Olympics-Logo.png';
+    img.src = '/Olympics-Logo.avif';
     if (img.decode) img.decode().catch(() => {});
 
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -100,7 +100,7 @@ export function GlobalNavbar({ showLogo = true }) {
           }}
         >
           <img
-            src="/Olympics-Logo.png"
+            src="/Olympics-Logo.avif"
             alt="Logo"
             className="w-full h-full object-contain"
           />

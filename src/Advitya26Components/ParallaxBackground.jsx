@@ -63,7 +63,7 @@ const ParallaxBackground = ({ onRingsFadeStart = () => { } }) => {
                     className='absolute top-0 left-0 w-full h-full z-60'
                 >
                     <motion.img
-                        src="/olympicsImages/golden-bridge-copy.png"
+                        src="/olympicsImages/golden-bridge.avif"
                         alt="Golden Bridge"
                         className='absolute -right-37.5 -bottom-37.5 scale-x-[-1] h-[90vh] w-[90vw] z-60'
                     // dont remove these part these for reference
@@ -82,7 +82,7 @@ const ParallaxBackground = ({ onRingsFadeStart = () => { } }) => {
                     transition={{ duration: 2, ease: "easeInOut" }}
                 >
                     <motion.img
-                        src="/olympicsImages/pisa.png"
+                        src="/olympicsImages/pisa.avif"
                         alt="pisa"
                         className='absolute bottom-0 h-[80vh] left-180px scale-x-[-1] z-70'
                     // dont remove these part these for reference
@@ -101,7 +101,7 @@ const ParallaxBackground = ({ onRingsFadeStart = () => { } }) => {
                     className='absolute top-0 left-10 w-full h-[90vh] z-80'
                 >
                     <motion.img
-                        src="/olympicsImages/torriigate.png"
+                        src="/olympicsImages/torriigate.avif"
                         alt="Torri Gate"
                         className='absolute -bottom-30 -left-15 h-[60vh] z-80'
                     // dont remove these part these for reference
@@ -120,7 +120,7 @@ const ParallaxBackground = ({ onRingsFadeStart = () => { } }) => {
                     className='absolute w-full h-[90vh] z-0 bottom-0'
                 >
                     <motion.img
-                        src="/olympicsImages/greatwall-final.png"
+                        src="/olympicsImages/greatwall-final.avif"
                         alt="great wall"
                         className="absolute bottom-0 z-0"
                     // dont remove these part these for reference
@@ -140,7 +140,7 @@ const ParallaxBackground = ({ onRingsFadeStart = () => { } }) => {
                     className='absolute w-full h-[90vh] z-80 bottom-0'
                 >
                     <motion.img
-                        src="/olympicsImages/Colosseum.png"
+                        src="/olympicsImages/Colosseum.avif"
                         alt="Colosseum"
                         className='absolute -bottom-30 right-87.5 h-[70vh] z-90'
                     // dont remove these part these for reference
