@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import footerCloud from "@/assets/footer_cloud_img.svg";
+// import footerCloud from "@/assets/footer_cloud_img.svg";
 import {
     Accordion,
     AccordionContent,
@@ -23,11 +23,11 @@ export default function MobileFooter() {
         <footer className="lg:hidden relative w-full overflow-hidden bg-[#0f1115] text-white">
             {/* Cloud header */}
             <div className="pointer-events-none select-none relative w-full">
-                <img
+                {/* <img
                     src={footerCloud}
                     alt=""
                     className="w-full h-44 scale-x-120"
-                />
+                /> */}
                 <div className="absolute inset-x-0 bottom-0 h-10 bg-linear-to-b from-transparent to-[#0f1115]" />
             </div>
 
