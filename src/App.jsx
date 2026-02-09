@@ -5,6 +5,7 @@ import SplashScreen from "./Components/SplashScreen/SplashScreen";
 import Footer from "./Components/Footer/Footer";
 import { useScrollContext } from "./context/ScrollContext";
 import AdvityaPopup from "./AdvityaPopup/AdvityaPopup";
+import DinoFollower from "./Components/DinoFollower";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -20,7 +21,9 @@ function App() {
       {showPopup && (
         <AdvityaPopup onClose={() => setShowPopup(false)} />
       )}
-
+      <div className=" z-[9999] select-none pointer-events-none absolute left-[2%] top-[6%] lg:w-20 xl:w-20 opacity-90">
+        <DinoFollower/>
+      </div>
       <NavBar />
       <main>
         <Outlet />

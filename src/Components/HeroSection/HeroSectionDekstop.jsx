@@ -20,6 +20,10 @@ export default function HeroSectionDesktop() {
     >
       {/* Decorative elements */}
       <motion.img
+      // src="/olympicsImages/dinosaur-trex.gif"
+      className="pointer-events-none absolute left-[2%] top-[6%] w-20 lg:w-20 xl:w-20S opacity-90"
+      />
+      <motion.img
         src={cloudLeft}
         alt=""
         aria-hidden="true"
