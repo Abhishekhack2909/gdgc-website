@@ -84,7 +84,7 @@ const eventsDomain = {
         lead: {
             name: "Shlok Rajesh Dhanokar",
             role: "Event Management Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/professional shlok - Shlok Rajesh Dhanokar 23bai10289.png",
             bio: "Expert in organizing large-scale tech events and community gatherings.",
             linkedin: "https://www.linkedin.com/in/shlokdhanokar/",
             github: "https://github.com/shlokdhanokar",
@@ -93,7 +93,7 @@ const eventsDomain = {
         coLead: {
             name: "Pragati Rai",
             role: "Events Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/PRAGATI RAI 24BCY10123.jpg",
             bio: "Events coordinator focusing on logistics and partnerships.",
             linkedin: "",
             github: "",
@@ -103,7 +103,7 @@ const eventsDomain = {
             {
                 name: "Nandini Lodha",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/NANDINI LODHA 24BCE11092.jpeg",
                 linkedin:
                     "https://www.linkedin.com/in/nandini-lodha-505185249/",
                 github: "https://github.com/nandinicodess",
@@ -111,7 +111,7 @@ const eventsDomain = {
             {
                 name: "Abhijeet Patil",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/ABHIJEET BALAJI PATIL 24BCE10110.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/abhijeet-patil-247677330",
                 github: "https://github.com/PATIL-ABHIJEET",
@@ -119,21 +119,21 @@ const eventsDomain = {
             {
                 name: "Ananya Rajesh Pandey",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/ANANYA RAJESH PANDEY 24BCE10461.jpeg",
                 linkedin: "https://www.linkedin.com/in/ananyapandey333",
                 github: "",
             },
             {
                 name: "Aaryan Nampoothiri A",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/AARYAN NAMPOOTHIRI A 24MEI10080.jpg",
                 linkedin: "https://www.linkedin.com/in/aaryannampoothiri",
                 github: "",
             },
             {
                 name: "Anisha Vishwakarma",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/ANISHA VISHWAKARMA 24BAI10755.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/anisha-vishwakarma-20b074244",
                 github: "",
@@ -141,14 +141,14 @@ const eventsDomain = {
             {
                 name: "Srashti Tomar",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/SRASHTI TOMAR 25BAI11169.jpeg",
                 linkedin: "",
                 github: "",
             },
             {
                 name: "Yaduveer Singh Chundawat",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Eventteamimages/YADUVEER SINGH CHUNDAWAT 24BCE11191.png",
                 linkedin:
                     "https://www.linkedin.com/in/yaduveer-singh-chundawat-547855328",
                 github: "",

@@ -84,7 +84,7 @@ const mlDomain = {
         lead: {
             name: "Kavya Gupta",
             role: "Machine Learning Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/MLmembersimages/Kavya Gupta 23bai10538.jpg",
             bio: "ML enthusiast focused on NLP and computer vision.",
             linkedin: "https://www.linkedin.com/in/its-kavya-gupta/",
             github: "https://github.com/kavya1b1",
@@ -93,7 +93,7 @@ const mlDomain = {
         coLead: {
             name: "Shubham Sharma",
             role: "Machine Learning Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/MLmembersimages/IMG-20251030-WA0010 - Shubham Sharma 23bai10229.jpg",
             bio: "ML engineer working on model deployment and MLOps.",
             linkedin: "https://www.linkedin.com/iamshubhshrma",
             github: "https://github.com/iamshubhshrma",
@@ -103,21 +103,21 @@ const mlDomain = {
             {
                 name: "Manthan Awgan",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/MLmembersimages/MANTHAN GOVIND AWGAN 24BSA10053.jpg",
                 linkedin: "https://www.linkedin.com/in/manthan-awgan-3591172a4",
                 github: "https://github.com/manthanawgan",
             },
             {
                 name: "Raghav Khare",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/MLmembersimages/IMG_20260130_171708 - RAGHAV KHARE 24BAI10086.png",
                 linkedin: "https://www.linkedin.com/in/raghav-khare-360312382",
                 github: "https://github.com/Raghavkhare12",
             },
             {
                 name: "Prakhar Shukla",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/MLmembersimages/IMG-20251125-WA0004 (2) - PRAKHAR SHUKLA 24BCE10117.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/prakhar-shukla-b5745a324",
                 github: "https://github.com/Intrepidloaf",
@@ -125,14 +125,14 @@ const mlDomain = {
             {
                 name: "Mayank Joshi",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/MLmembersimages/IMG_20260131_103618 - MAYANK JOSHI 24BCE10858.jpg",
                 linkedin: "https://www.linkedin.com/in/mayank-joshi-399b2b385",
                 github: "https://github.com/Mayank251125",
             },
             {
                 name: "Deeksha Kaushal",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/MLmembersimages/DEEKSHA KAUSHAL 25BHI10019.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/deeksha-kaushal-88b6ba261",
                 github: "https://github.com/deenominator",

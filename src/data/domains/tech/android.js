@@ -74,7 +74,7 @@ const androidDomain = {
         lead: {
             name: "Shikhar Sharma",
             role: "Android Development Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/Androiddevmembersimages/WhatsApp Image 2026-01-30 at 11.28.53 PM - Shikhar Sharma 23bce10108.jpeg",
             bio: "Android developer with experience in building production apps.",
             linkedin: "https://www.linkedin.com/in/shikhar-sharma-1268552b7/",
             github: "https://github.com/Shikhar-web25",
@@ -83,7 +83,7 @@ const androidDomain = {
         coLead: {
             name: "Nethaniel Johan Kurian",
             role: "Android Development Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/Androiddevmembersimages/IMG-20240127-WA0000 - NETHANIEL JOHAN KURIAN 24BCY10210.jpg",
             bio: "Kotlin enthusiast and Android engineer.",
             linkedin: "https://linkedin.com/in/nethaniel-kurian/",
             github: "https://github.com/Neth766/",
@@ -93,21 +93,21 @@ const androidDomain = {
             {
                 name: "Prateek Das",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Androiddevmembersimages/IMG-20251215-WA0016 - PRATEEK DAS 25BCE10599.jpg",
                 linkedin: "https://www.linkedin.com/in/prateek-das-a45215252",
                 github: "https://github.com/Amazingdude1525",
             },
             {
                 name: "Radha Agarwal",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Androiddevmembersimages/Radha Agarwal 23bce10626.jpg",
                 linkedin: "https://www.linkedin.com/in/radha-agarwal-67b925289",
                 github: "https://github.com/ravine27",
             },
             {
                 name: "Nityay Bhavsar",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Androiddevmembersimages/photo - NITYAY BHAVSAR 24BCG10064.jpeg",
                 linkedin:
                     "https://www.linkedin.com/in/nityay-bhavsar-b05190310/",
                 github: "https://github.com/Nityayyrrr",
@@ -115,14 +115,14 @@ const androidDomain = {
             {
                 name: "Aryan Katwal",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Androiddevmembersimages/AK - ARYAN KATWAL 24BCG10101.jpeg",
                 linkedin: "https://www.linkedin.com/in/aryan-katwal-b1b9b6307/",
                 github: "https://github.com/AryanKatwal06",
             },
             {
                 name: "Shubham Pratap Singh",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Androiddevmembersimages/IMG_20260131_135103 - SHUBHAM PRATAP SINGH 24BAI10214.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/shubham-pratap-7b0ab3327",
                 github: "https://github.com/shubham989825",

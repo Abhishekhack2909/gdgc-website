@@ -84,7 +84,7 @@ const socialMediaDomain = {
         lead: {
             name: "Kuhoo Champaneria",
             role: "Marketing Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/Kuhoo Mitesh Champaneria 23msi10022.jpg",
             bio: "Digital marketing specialist with a passion for community building.",
             linkedin:
                 "https://www.linkedin.com/in/kuhoo-champaneria-5b690a289/",
@@ -94,7 +94,7 @@ const socialMediaDomain = {
         coLead: {
             name: "Atiksh Prasad",
             role: "Social Media Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/ATIKSH PRASAD 24BCE10313.jpg",
             bio: "Content strategist and community manager focused on growth.",
             linkedin: "https://www.linkedin.com/in/atiksh-prasad",
             github: "",
@@ -104,14 +104,14 @@ const socialMediaDomain = {
             {
                 name: "Vaani Aidasani",
                 role: "Co-Lead",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/VAANI AIDASANI 24BCE10742.jpg",
                 linkedin: "https://www.linkedin.com/in/vaaniaidasani/",
                 github: "",
             },
             {
                 name: "Sachin Sundareswaran",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/SACHIN SUNDARESWARAN 25MIM10056.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/sachin-sundareswaran-66273a37b",
                 github: "",
@@ -119,7 +119,7 @@ const socialMediaDomain = {
             {
                 name: "Akriti Khantwal",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/AKRITI KHANTWAL 24BAI10401.jpgs",
                 linkedin:
                     "https://www.linkedin.com/in/akriti-khantwal-503a4b359",
                 github: "",
@@ -127,14 +127,14 @@ const socialMediaDomain = {
             {
                 name: "Vedant Seth",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/VEDANT SETH 24BCE11450.jpeg",
                 linkedin: "https://www.linkedin.com/in/vedant-seth-385102322/",
                 github: "https://github.com/Vedant14092006",
             },
             {
                 name: "Jhanvi Srivastava",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/JHANVI SRIVASTAVA 25BCE10405.jpeg",
                 linkedin:
                     "https://www.linkedin.com/in/jhanvi-srivastava-6005a2386/",
                 github: "https://github.com/Jhanvisrivastava2107",
@@ -150,7 +150,7 @@ const socialMediaDomain = {
             {
                 name: "Sourav Shandilya",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Socialmedia&marketingteamimages/Sourav Shandilya 23bce10039.webp",
                 linkedin:
                     "https://www.linkedin.com/in/sourav-shandilya-4b6165268",
                 github: "",

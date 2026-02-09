@@ -76,7 +76,7 @@ const mediaDomain = {
         lead: {
             name: "Swati Singh",
             role: "Media Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Videographyteamimages/SWATI SINGH 24BEY10046.webp",
             bio: "Professional videographer and photographer specializing in tech events.",
             linkedin: "https://www.linkedin.com/in/swatiiisiiingh",
             github: "",
@@ -85,7 +85,7 @@ const mediaDomain = {
         coLead: {
             name: "Yash Khatwani",
             role: "Media Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Videographyteamimages/Yash Khatwani 23bce10362.jpeg",
             bio: "Videographer and editor working on event coverage and tutorials.",
             linkedin: "https://www.linkedin.com/in/yash-khatwani-133bb9353",
             github: "https://github.com/YashKhatwani915",
@@ -95,28 +95,28 @@ const mediaDomain = {
             {
                 name: "Shashwat Roy",
                 role: "Co-Lead",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Videographyteamimages/SHASHWAT ROY 24MIM10019.jpeg",
                 linkedin: "https://www.linkedin.com/in/shashwat-roy-955308315/",
                 github: "https://github.com/Shash-roy",
             },
             {
                 name: "Karthik Gupta",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Videographyteamimages./GUPTA KARTHIK JEETENDRABHAI .jpg",
                 linkedin: "https://www.linkedin.com/in/karthik-gupta-k2112",
                 github: "",
             },
             {
                 name: "Saksham Raut",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "Domainimages/N-TechDomainimages/Videographyteamimages/GUPTA KARTHIK JEETENDRABHAI.jpg",
                 linkedin: "https://www.linkedin.com/in/saksham-raut-11b10b377/",
                 github: "https://github.com/saksham110206",
             },
             {
                 name: "Noynika Asrani",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Videographyteamimages/NOYNIKA ASRANI 24MIM10237.jpeg",
                 linkedin:
                     "https://www.linkedin.com/in/noynika-asrani-50167b32a",
                 github: "https://github.com/Noynika",
@@ -124,7 +124,7 @@ const mediaDomain = {
             {
                 name: "Achyut Khetan",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Videographyteamimages/ACHYUT KHETAN 24BCE11249.jpg",
                 linkedin: "https://in.linkedin.com/in/achyut-khetan-443673350",
                 github: "https://github.com/achyutkhetan",
             },

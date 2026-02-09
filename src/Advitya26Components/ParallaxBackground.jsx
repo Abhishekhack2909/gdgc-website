@@ -13,9 +13,10 @@ const ParallaxBackground = ({ onRingsFadeStart = () => { } }) => {
     const colosseum = useTransform(x, [0, 0.5], [0, 300]);
     const greatwall = useTransform(x, [0, 0.5], [0, 250]);
 
-    // Scroll-based blur effect
-    const blurValue = useTransform(scrollYProgress, [0.15, 0.5], [0, 12]);
-    const blur = useTransform(blurValue, (v) => `blur(${v}px)`);
+    // Scroll-based blur effect - full blur when AboutCard is in view
+    const blur = useTransform(scrollYProgress, (progress) =>
+        progress >= 0.06 ? 'blur(12px)' : 'blur(0px)'
+    );
 
     // Scroll-based shrink effect
     // might use these in future

@@ -86,7 +86,7 @@ const designDomain = {
         lead: {
             name: "Kshitij Tripathi",
             role: "Design Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/KSHITIJ TRIPATHI 23BCE11736.HEIC",
             bio: "Visual designer creating impactful designs for tech communities.",
             linkedin: "https://www.linkedin.com/in/kshitij-tripathi-163415275",
             github: "https://github.com/KTPhantom",
@@ -95,7 +95,7 @@ const designDomain = {
         coLead: {
             name: "Harshika Sunkara",
             role: "Design Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/SUNKARA HARSHIKA 24BOE10050.png",
             bio: "Product designer focused on UX systems and prototyping.",
             linkedin: "https://linkedin.com/in/harshika-sunkara-11143537a",
             github: "https://github.com/harshika-nub",
@@ -105,35 +105,35 @@ const designDomain = {
             {
                 name: "Akash Kumar Pandey",
                 role: "Co-Lead",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/AKASH KUMAR PANDEY 24BEY10064.jpg",
                 linkedin: "https://www.linkedin.com/in/akash-pandey-987466190",
                 github: "https://github.com/a4kashhh",
             },
             {
                 name: "Anika Mangla",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/ANIKA 25BAI10931.jpg",
                 linkedin: "https://www.linkedin.com/in/anika-m-892081299",
                 github: "https://github.com/anika00mangla",
             },
             {
                 name: "Singh Bhumija Lalitkumar",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/SINGHBHUMIJA LALITKUMAR 24BCE11200.jpg",
                 linkedin: "",
                 github: "",
             },
             {
                 name: "Shubh Tyagi",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/SHUBH TYAGI 24BCY10016(1).png",
                 linkedin: "https://www.linkedin.com/in/shubh-tyagi-1a8aab323/",
                 github: "https://github.com/tyagishubh17",
             },
             {
                 name: "Priyanshi Gupta",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/picture - PRIYANSHI GUPTA 24BCE10525.jpeg",
                 linkedin:
                     "https://www.linkedin.com/in/priyanshi-gupta-68598335a",
                 github: "https://github.com/magnetic-c",
@@ -141,14 +141,14 @@ const designDomain = {
             {
                 name: "Utkarsh Sharma",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/IMG_20260129_212625 - UTKARSH SHARMA 24BCY10080.jpg",
                 linkedin: "https://www.linkedin.com/in/xylarian",
                 github: "https://github.com/Xylarian",
             },
             {
                 name: "Saumil Singhal",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/IMG_20260131_103117 - Saumil Singhal 23bai11005.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/saumil-singhal-02a424227",
                 github: "https://github.com/saumil-777",
@@ -156,7 +156,7 @@ const designDomain = {
             {
                 name: "Yuvraj Singh Parihar",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/Yuvraj Singh Parihar 23bai10187.jpeg",
                 linkedin:
                     "https://www.linkedin.com/in/yuvraj-singh-parihar-a75a0428a/",
                 github: "",
@@ -164,7 +164,7 @@ const designDomain = {
             {
                 name: "Ekansh Singh",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/N-TechDomainimages/Design&contentteamimages/Ekansh Singh 23bai10119.jpg",
                 linkedin: "",
                 github: "",
             },

@@ -117,16 +117,16 @@ const webDevDomain = {
         lead: {
             name: "Priyanshu Singh",
             role: "Web Development Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/Webdevmembersimages/Priyanshu Singh 23bai10686.jpg",
             bio: "Full-stack developer passionate about building scalable web applications.",
             linkedin: "https://www.linkedin.com/in/iampriyanshusingh/",
             github: "https://github.com/iampriyanshusingh",
             email: "",
         },
         coLead: {
-            name: "Ayank",
+            name: "Ayank Kumar Giri",
             role: "Web Development Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/Webdevmembersimages/Ayank Kumar Giri.jpeg",
             bio: "Developer focused on Latest technologies and user experience design.",
             linkedin: "https://www.linkedin.com/in/ayank-kumar-giri-9895ab339",
             github: "https://github.com/Ayankkk29/",
@@ -136,7 +136,7 @@ const webDevDomain = {
             {
                 name: "Rakshit Raj",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Webdevmembersimages/RAKSHIT RAJ 25BAI11234.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/rakshitrajvit/",
                 github: "https://github.com/RakshitRajVIT",
@@ -144,7 +144,7 @@ const webDevDomain = {
             {
                 name: "Abhishek",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Webdevmembersimages/75_kb_imageL5OTTM (18) - ABHISHEK 24BCE10272.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/abhishek-tripathi-a714ab30b/",
                 github: "https://github.com/Abhishekhack2909",
@@ -152,7 +152,7 @@ const webDevDomain = {
             {
                 name: "Aryan Amit Arya",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Webdevmembersimages/ARYAN AMIT ARYA 25BAI10295.png",
                 linkedin: "https://www.linkedin.com/in/aryan-amit-arya",
                 github: "https://github.com/RelaxItsAryan",
             },

@@ -13,7 +13,7 @@
 /* ================= POPUP WRAPPER ================= */
 .speech-wrapper{
   position: relative;
-  width: clamp(280px, 30vw, 420px);
+  width: clamp(360px, 50vw, 600px);
   animation: popIn .3s ease;
 }
 
@@ -58,7 +58,7 @@
   width: 100%;
   display: block;
   border-radius: 4px;
-  max-height: 350px;
+  max-height: 400px;
 }
 
 /* ================= CLOSE BUTTON ================= */
@@ -95,7 +95,7 @@
 
 /* outer box */
 .timer{
-  width: 44px;
+  width: 56px;
 }
 
 /* white square */
@@ -110,7 +110,7 @@
 /* number */
 .countdown-element{
   color: #000000 !important;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
   text-align: center;
@@ -119,16 +119,16 @@
 /* label text */
 .timer p{
   color: #ffffff !important;
-  font-size: 10px;
-  margin-top: 3px;
+  font-size: 12px;
+  margin-top: 4px;
   text-align: center;
 }
 
 /* colon */
 .count-down-main > h3{
   color: #000000 !important;
-  font-size: 16px;
-  margin-top: 8px;
+  font-size: 20px;
+  margin-top: 10px;
   font-weight: 600;
 }
 
@@ -140,13 +140,13 @@
 /* ================= REGISTER STAMP STICKER ================= */
 .register-btn{
   position: absolute;
-  bottom: 18%;
-  right: -10px;
+  bottom: 8rem;
+  right: clamp(0.75rem, 12vw, 10rem);
   background: #ff3b3b;
   color: white;
   font-weight: 900;
-  font-size: 14px;
-  padding: 10px 22px;
+  font-size: 16px;
+  padding: 10px 8px;
   text-decoration: none;
   transform: rotate(-15deg);
   border-radius: 4px;
@@ -183,44 +183,44 @@
 @media (max-width: 600px){
 
   .speech-wrapper{
-    width: 90vw;
+    width: 95vw;
   }
 
   .stamp-core img{
-    max-height: 240px;
+    max-height: 380px;
   }
 
   .timer{
-    width: 38px;
+    width: 48px;
   }
 
   .timer > div{
-    padding: 5px 3px !important;
+    padding: 8px 5px !important;
   }
 
   .countdown-element{
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .timer p{
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .count-down-main > h3{
-    font-size: 14px;
-    margin-top: 7px;
+    font-size: 18px;
+    margin-top: 10px;
   }
 
   .register-btn{
-    font-size: 12px;
-    padding: 8px 14px;
-    bottom: 20%;
-    right: -6px;
+    font-size: 14px;
+    padding: 10px 20px;
+    bottom: 9rem;
+    right: clamp(0.75rem, 20vw, 10rem);
   }
 
   .close-btn{
-    width: 24px;
-    height: 24px;
-    font-size: 13px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
   }
 }

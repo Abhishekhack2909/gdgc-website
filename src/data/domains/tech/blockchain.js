@@ -85,7 +85,7 @@ const blockchainDomain = {
         lead: {
             name: "Ravi Kant Mishra",
             role: "Blockchain Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/Blockchainmembersimages/WhatsApp Image 2026-01-29 at 10.51.20 PM - Ravi Kant Mishra 23bcy10032.jpeg",
             bio: "Web3 developer building the future of decentralized applications.",
             linkedin: "https://www.linkedin.com/in/ravi-kant-mishra-30a8642b1",
             github: "",
@@ -94,7 +94,7 @@ const blockchainDomain = {
         coLead: {
             name: "Meyhul V Jaiswal",
             role: "Blockchain Co-Lead",
-            avatar: "https://placehold.co/128x128",
+            avatar: "/Domainimages/TechDomainimages/Blockchainmembersimages/Image 1 - MEYHUL V JAISWAL 24BCY10270.png",
             bio: "Blockchain developer with a focus on smart contracts and security.",
             linkedin: "https://www.linkedin.com/in/meyhul-v-jaiswal-525648263",
             github: "https://www.github.com/meyhul03",
@@ -104,7 +104,7 @@ const blockchainDomain = {
             {
                 name: "Poorva Jaiswal",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Blockchainmembersimages/IMG_20260115_104915 - POORVA JAISWAL 24BCE11486.jpg",
                 linkedin:
                     "https://www.linkedin.com/in/poorva-jaiswal-53aa29303",
                 github: "https://github.com/Poorva77",
@@ -112,7 +112,7 @@ const blockchainDomain = {
             {
                 name: "Krishna Barot",
                 role: "Core Member",
-                avatar: "https://placehold.co/128x128",
+                avatar: "/Domainimages/TechDomainimages/Blockchainmembersimages/IMG_20251110_152905 - KRISHNA VINIT BAROT 25BCE10252.jpg",
                 linkedin: "https://www.linkedin.com/in/krishna-barot-75580b375",
                 github: "https://github.com/barotkrishna1702",
             },

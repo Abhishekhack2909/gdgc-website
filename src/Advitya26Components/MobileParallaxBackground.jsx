@@ -16,9 +16,10 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
     const colosseum = useTransform(x, [0, 0.1], [0, 100]);
     const greatwall = useTransform(x, [0, 0.1], [0, 80]);
 
-    // Optimized blur effect for mobile
-    const blurValue = useTransform(scrollYProgress, [0.15, 0.5], [0, 6]);
-    const blur = useTransform(blurValue, (v) => `blur(${v}px)`);
+    // Optimized blur effect for mobile - full blur when AboutCard is in view
+    const blur = useTransform(scrollYProgress, (progress) =>
+        progress >= 0.06 ? 'blur(8px)' : 'blur(0px)'
+    );
 
     return (
         <div className='sticky top-0 h-screen w-full z-0 border-none'>
@@ -45,7 +46,7 @@ const MobileParallaxBackground = ({ onRingsFadeStart = () => {} }) => {
                     }}
                 />
 
-                 {/*Google Olympics Heading - appears after rings fade`*/}
+                {/*Google Olympics Heading - appears after rings fade`*/}
                 <div className="absolute inset-0 z-[101] flex items-start justify-center pt-[11vh] px-4">
                     <GoogleOlympicsHeading show={showHeading} />
                 </div>
