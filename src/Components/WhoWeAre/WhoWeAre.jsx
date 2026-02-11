@@ -12,7 +12,7 @@ export default function WhoWeAre() {
   return (
     <>
       {/* Who We Are Section - Desktop */}
-      <div className="hidden md:block px-8 lg:px-16 py-16 bg-white">
+      <div className="hidden md:block px-8 lg:px-16 pt-0 pb-8 bg-white">
         {/* Title Section */}
         <div className="flex justify-center mb-8">
           <div className="flex items-center gap-4">

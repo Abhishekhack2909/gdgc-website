@@ -60,12 +60,12 @@ const AsteriskIcon = ({ color }) => {
   if (color === "yellow") {
     return (
       <svg
-        width="70"
-        height="70"
+        width="50"
+        height="50"
         viewBox="0 0 100 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="animate-spin"
+        className="animate-spin md:w-[70px] md:h-[70px]"
         style={{ animation: 'spin 4s linear infinite' }}
       >
         <polygon
@@ -83,12 +83,12 @@ const AsteriskIcon = ({ color }) => {
   if (color === "cyan") {
     return (
       <svg
-        width="70"
-        height="70"
+        width="50"
+        height="50"
         viewBox="0 0 100 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="animate-spin"
+        className="animate-spin md:w-[70px] md:h-[70px]"
         style={{ animation: 'spin 4s linear infinite' }}
       >
         {[...Array(8)].map((_, i) => {
@@ -115,12 +115,12 @@ const AsteriskIcon = ({ color }) => {
   // Blue - Many thin radiating lines (starburst)
   return (
     <svg
-      width="70"
-      height="70"
+      width="50"
+      height="50"
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="animate-spin"
+      className="animate-spin md:w-[70px] md:h-[70px]"
       style={{ animation: 'spin 4s linear infinite' }}
     >
       {[...Array(24)].map((_, i) => (
@@ -141,13 +141,13 @@ const AsteriskIcon = ({ color }) => {
 };
 
 const FAQCard = ({ question, answer, iconColor }) => (
-  <div className="border border-white/100 rounded-lg p-6 flex items-center gap-10 bg-transparent hover:bg-white/5 transition-colors w-full max-w-10xl" style={{ fontFamily: "'Poppins', sans-serif" }}>
+  <div className="border border-white/100 rounded-lg p-3 md:p-12 flex items-center gap-4 md:gap-12 bg-transparent hover:bg-white/5 transition-colors w-full max-w-10xl" style={{ fontFamily: "'Poppins', sans-serif" }}>
     <div className="flex-shrink-0">
       <AsteriskIcon color={iconColor} />
     </div>
     <div>
-      <h3 className="text-white font-bold text-[28px] mb-2">{question}</h3>
-      <p className="text-white/100 text-[22px] font-normal">{answer}</p>
+      <h3 className="text-white font-bold text-base md:text-3xl mb-1 md:mb-4">{question}</h3>
+      <p className="text-white/90 text-xs md:text-xl font-normal">{answer}</p>
     </div>
   </div>
 );
@@ -167,7 +167,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="w-screen h-screen bg-[#0a0a0a] relative flex flex-col overflow-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
+    <div className="w-screen h-auto md:h-screen bg-[#0a0a0a] relative flex flex-col overflow-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
       {/* Grid Background */}
       <div
         className="absolute inset-0 z-0"
@@ -182,7 +182,7 @@ export default function FAQ() {
 
       {/* Header - standard relative positioning */}
       <div
-        className="relative z-20 px-6 md:px-28 py-8 md:py-12 shrink-0"
+        className="relative z-20 px-4 md:px-28 py-4 md:py-12 shrink-0"
         style={{
           backgroundColor: '#0a0a0a',
           backgroundImage: `
@@ -193,17 +193,17 @@ export default function FAQ() {
         }}
       >
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-          <h1 className="text-white text-[60px] md:text-[100px] font-semibold mb-6 md:mb-0 tracking-tight">
+          <h1 className="text-white text-[40px] md:text-[100px] font-semibold mb-4 md:mb-0 tracking-tight">
             FAQs
           </h1>
 
           {/* Tabs */}
-          <div className="flex gap-3 flex-wrap">
+          <div className="flex gap-1.5 md:gap-3 flex-nowrap overflow-x-auto md:flex-wrap justify-start">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => handleTabClick(tab.id)}
-                className={`px-6 py-2.5 rounded-full text-[18px] font-medium transition-all duration-300 border ${
+                className={`px-3 md:px-6 py-1.5 md:py-2.5 rounded-full text-xs md:text-[18px] font-medium transition-all duration-300 border whitespace-nowrap ${
                   activeTab === tab.id
                     ? 'bg-white text-black border-white'
                     : 'bg-transparent text-white border-white/50 hover:border-white'
@@ -217,9 +217,9 @@ export default function FAQ() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 px-6 md:px-28 pt-4 pb-12 flex-1 overflow-y-auto">
-        <div className="space-y-4">
-          <h2 className="text-white text-[32px] font-medium mb-6 uppercase">
+      <div className="relative z-10 px-4 md:px-28 pt-2 pb-2 md:pb-4 flex-1 overflow-y-auto">
+        <div className="space-y-2 md:space-y-6">
+          <h2 className="text-white text-lg md:text-4xl font-medium mb-3 md:mb-8 uppercase">
             {activeTab}
           </h2>
           {faqData[activeTab].map((faq, index) => (

@@ -25,10 +25,10 @@ export default function AdvityaFooter() {
       rotation={true}
       hoverForce={10}
     >
-      <footer className="relative w-full min-h-screen text-white flex flex-col justify-between py-16 px-8 md:px-16">
+      <footer className="relative w-full min-h-screen text-white flex flex-col justify-between py-8 md:py-16 px-6 md:px-16">
         {/* Main Content - Top Section */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto flex-1 flex items-start pt-12 pointer-events-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start w-full gap-12">
+        <div className="relative z-10 w-full max-w-7xl mx-auto flex-1 flex items-start pt-6 md:pt-12 pointer-events-auto">
+          <div className="flex flex-col md:flex-row justify-between items-start w-full gap-8 md:gap-12">
             {/* Left Side - CTA */}
             <div className="flex-1 max-w-3xl">
               <h2 
@@ -49,9 +49,9 @@ export default function AdvityaFooter() {
             </div>
 
             {/* Right Side - Contact Info */}
-            <div className="flex-1 flex flex-col items-end">
+            <div className="flex-1 flex flex-col items-start md:items-end">
               {/* Dragon Icon */}
-              <div className="mb-6">
+              <div className="mb-4">
                 <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="20" y="20" width="60" height="60" fill="#6B7FFF" rx="8"/>
                   <circle cx="40" cy="45" r="5" fill="white"/>
@@ -59,15 +59,15 @@ export default function AdvityaFooter() {
                 </svg>
               </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold mb-8 tracking-wide">CONTACT US</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 tracking-wide">CONTACT US</h3>
               
               {/* Contact Email */}
-              <div className="mb-6 text-right">
+              <div className="mb-4 text-left md:text-right">
                 <p className="text-xl md:text-2xl font-semibold mb-1">gdsc@vitbhopal.ac.in</p>
               </div>
 
               {/* Social Media Icons */}
-              <div className="flex justify-end gap-4">
+              <div className="flex justify-start md:justify-end gap-4">
                 <a 
                   href="https://www.instagram.com/gdgcvitbhopal" 
                   target="_blank" 

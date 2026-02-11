@@ -16,7 +16,7 @@ export default function HeroSectionDesktop() {
   return (
     <section
       aria-label="Desktop hero"
-      className="relative w-full min-h-[calc(100vh-4rem)] overflow-x-hidden bg-white text-black"
+      className="relative w-full min-h-[calc(80vh-4rem)] overflow-x-hidden bg-white text-black"
     >
       {/* Decorative elements */}
       <motion.img
