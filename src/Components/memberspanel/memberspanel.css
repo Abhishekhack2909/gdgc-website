@@ -115,6 +115,24 @@
   background: rgba(255, 255, 255, 0.5);
 }
 
+.profiles-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.profiles-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.profiles-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.profiles-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .team-heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
@@ -417,7 +435,7 @@
   }
 
   .vision-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
@@ -426,7 +444,7 @@
   }
 
   .vision-text p {
-    font-size: 0.69rem;
+    font-size: 0.75rem;
     margin-bottom: 1rem;
     line-height: 1.4;
   }
@@ -444,7 +462,7 @@
   }
 
   .profiles-container {
-    padding: 1.5rem;
+    padding: 0rem;
     border-top-width: 10px;
     border-bottom-width: 10px;
     border-top-color: #10b981;
@@ -474,7 +492,7 @@
     text-align: center;
     padding: 2.5rem;
     min-height: auto;
-    gap: 0.75rem;
+    gap: 1.99rem;
   }
 
   .profile-image-container {
